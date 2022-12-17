@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    /* box-shadow: inset 0px 0px 0px 1px #f00; */
+    user-select: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/BraveOptimalBaleenwhale-size_restricted.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.logo {
+    font-family: "Press Start 2P", sans-serif;
+    color: rgb(197, 197, 197);
+    margin: 0 0 2em 0;
+}
+.calcWrapper {
+    width: 40%;
+    background-color: rgba(34, 34, 34, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2em;
+    border: outset 0.3em #878787;
+    -webkit-box-shadow: 1px 0px 31px 8px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 1px 0px 31px 8px rgba(0, 0, 0, 0.58);
+    box-shadow: 1px 0px 31px 8px rgba(0, 0, 0, 0.58);
+}
+.calcBody {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5em 0 2em 0;
+}
+.calcDisplay {
+    width: 100%;
+    background-color: #c6d598a5;
+    border-radius: 0.2em;
+    font-size: 2rem;
+    padding: 1em 0;
+    font-weight: 800;
+    text-align: end;
+    font-family: "Press Start 2P", sans-serif;
+    -webkit-box-shadow: 1px 6px 75px -14px rgba(0, 0, 0, 0.81) inset;
+    -moz-box-shadow: 1px 6px 75px -14px rgba(0, 0, 0, 0.81) inset;
+    box-shadow: 1px 6px 75px -14px rgba(0, 0, 0, 0.81) inset;
+}
+.calcDisplay p {
+    margin-right: 1em;
+}
+.calcButtonsWrapper {
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.calcNumButtonsWrapper {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1em;
+    column-gap: 1.5em;
+}
+.button {
+    width: 100%;
+    grid-auto-rows: 100px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1em 0.1em;
+    font-size: 2rem;
+    border-radius: 0.6em;
+}
+
+.button0 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+.calcLogicButtonsWrapper {
+    width: 20%;
+    display: grid;
+    row-gap: 1em;
+}
+.nums {
+    background-color: #03030397;
+    border: outset #383838;
+    color: rgb(185, 185, 185);
+    font-weight: 900;
+}
+.logic {
+    background-color: #f98f049e;
+    border: outset #ffa939;
+    color: rgb(220, 220, 220);
+    font-weight: 500;
+}
+.nums:hover {
+    background-color: #15151579;
+    border: inset #4b4b4b;
+    color: white;
+    font-weight: 900;
+}
+.logic:hover {
+    background-color: #d076007e;
+    border: inset #9d5900;
+    color: white;
+    font-weight: 900;
+}
+.active {
+    background-color: #ffd59e;
+    border: inset #9d5900;
+    color: #d07600;
+    font-weight: 900;
+}
+.calcRemClerButtonsWrapper {
+    margin-top: 1em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+}
+.buttonEqualTo {
+    background-color: #ffb4529e;
+    color: #6f3f00;
+    border: outset #ffa939;
+    font-weight: 900;
+}
+.buttonEqualTo:hover {
+    background-color: #ff97109c;
+    color: #6f3f00;
+    border: outset #ffa734;
+    font-weight: 900;
+}
+.remClerButton {
+    background-color: #34343488;
+    border: outset #323232;
+    color: #ffa734;
+    font-weight: 900;
+    text-align: center;
+    padding: 0 0.1em;
+    font-size: 1rem;
+    border-radius: 0.6em;
+}
+.remClerButton:hover {
+    background-color: #343434a3;
+    border: inset #323232;
+    color: rgb(255, 255, 255);
+}
+.addLogic {
+    background-color: #343434;
+    border: outset #323232;
+    color: rgb(128, 128, 128);
+    font-weight: 900;
+}
+.addLogic:hover {
+    background-color: #343434;
+    border: inset #323232;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+.inProgress:hover {
+    background-color: #710000;
+    border: outset #b30000;
+    color: rgb(255, 58, 58);
+    font-weight: 900;
+}
